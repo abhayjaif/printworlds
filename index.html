@@ -1,0 +1,2568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Complete printing services for banners, brochures, business cards, digital printing, and custom design in Jaipur." />
+  
+  <!-- ====== GOOGLE SEARCH LOGO - SCHEMA MARKUP ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Print World",
+    "url": "https://www.printworld.in",
+    "logo": "https://www.printworld.in/logo.jpeg",
+    "sameAs": [
+      "https://www.instagram.com/printworldsjaipur",
+      "https://wa.me/918562801299"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-85628-01299",
+      "contactType": "Sales",
+      "availableLanguage": ["English", "Hindi"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "139, Mall Rd, Sector-3, Naya Khera",
+      "addressLocality": "Vidyadhar Nagar",
+      "addressRegion": "Jaipur",
+      "addressCountry": "IN",
+      "postalCode": "302039"
+    }
+  }
+  </script>
+  
+  <!-- ====== OPEN GRAPH (Facebook/WhatsApp Preview) ====== -->
+  <meta property="og:title" content="Print World - Jaipur's Premium Print Studio" />
+  <meta property="og:description" content="Banners, Brochures, Business Cards, Digital Printing & Custom Design in Jaipur." />
+  <meta property="og:image" content="https://www.printworld.in/logo.jpeg" />
+  <meta property="og:url" content="https://www.printworld.in" />
+  <meta property="og:type" content="website" />
+  
+  <!-- ====== TWITTER CARD ====== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Print World - Jaipur's Premium Print Studio" />
+  <meta name="twitter:description" content="Banners, Brochures, Business Cards, Digital Printing & Custom Design." />
+  <meta name="twitter:image" content="https://www.printworld.in/logo.jpeg" />
+  
+  <!-- ====== FAVICON (Browser Tab Logo) ====== -->
+  <link rel="icon" type="image/jpeg" href="logo.jpeg" />
+  <link rel="apple-touch-icon" href="logo.jpeg" />
+  
+  <title>Printworld.in</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <style>
+    /* ----- COLORFUL CORPORATE ROOT THEME ----- */
+    :root {
+      --primary: #0a192f;
+      --primary-light: #172a45;
+      --accent-orange: #ff6b35;
+      --accent-teal: #00b4d8;
+      --accent-green: #2ec4b6;
+      --accent-pink: #ff007f;
+      --accent-purple: #7209b7;
+      --white: #ffffff;
+      --soft-bg: #f8f9fa;
+      --gradient-rainbow: linear-gradient(135deg, #ff6b35 0%, #ff007f 50%, #7209b7 100%);
+      --gradient-hero: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+      --shadow: 0 20px 45px rgba(0,0,0,0.08);
+      --shadow-hover: 0 35px 70px rgba(0,0,0,0.15);
+      --radius: 24px;
+      --radius-sm: 14px;
+    }
+
+    /* ----- RESET & BASE ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #f0f4f8;
+      color: #2d3748;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ====== FLOATING SOCIAL BUTTONS ====== */
+    .social-float {
+      position: fixed;
+      left: 20px;
+      bottom: 120px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .social-float a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      color: white;
+      font-size: 26px;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+    }
+    .social-float a:hover {
+      transform: scale(1.15) translateX(4px);
+    }
+    .social-float .whatsapp {
+      background: #25D366;
+      animation: pulse-whatsapp 2s infinite;
+    }
+    .social-float .instagram {
+      background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      animation: pulse-instagram 2s infinite 0.3s;
+    }
+    .social-float .tooltip {
+      position: absolute;
+      left: 68px;
+      background: rgba(0,0,0,0.85);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    .social-float a:hover .tooltip {
+      opacity: 1;
+      transform: translateX(4px);
+    }
+    .social-float .tooltip::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 6px solid transparent;
+      border-right-color: rgba(0,0,0,0.85);
+    }
+
+    @keyframes pulse-whatsapp {
+      0%, 100% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+      50% { box-shadow: 0 6px 30px rgba(37, 211, 102, 0.7); }
+    }
+    @keyframes pulse-instagram {
+      0%, 100% { box-shadow: 0 6px 20px rgba(214, 41, 118, 0.4); }
+      50% { box-shadow: 0 6px 30px rgba(214, 41, 118, 0.7); }
+    }
+
+    /* ====== AI CHAT TOGGLE ====== */
+    .ai-chat-toggle {
+      position: fixed;
+      right: 20px;
+      bottom: 120px;
+      z-index: 999;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--gradient-rainbow);
+      color: white;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      box-shadow: 0 6px 25px rgba(255,0,127,0.5);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      animation: pulse-ai 2s infinite 0.6s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ai-chat-toggle:hover {
+      transform: scale(1.15) rotate(-10deg);
+    }
+    .ai-chat-toggle .tooltip {
+      position: absolute;
+      right: 72px;
+      background: rgba(0,0,0,0.85);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    .ai-chat-toggle:hover .tooltip {
+      opacity: 1;
+      transform: translateX(-4px);
+    }
+    .ai-chat-toggle .tooltip::before {
+      content: '';
+      position: absolute;
+      right: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 6px solid transparent;
+      border-left-color: rgba(0,0,0,0.85);
+    }
+    @keyframes pulse-ai {
+      0%, 100% { box-shadow: 0 6px 25px rgba(255,0,127,0.5); }
+      50% { box-shadow: 0 6px 40px rgba(255,0,127,0.8); }
+    }
+
+    /* AI Chat Modal */
+    .ai-chat-modal {
+      position: fixed;
+      right: 20px;
+      bottom: 190px;
+      width: 400px;
+      max-height: 550px;
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+      z-index: 999;
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .ai-chat-modal.active {
+      display: flex;
+      animation: slideUp 0.3s ease;
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px) scale(0.95); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .ai-chat-header {
+      background: var(--gradient-rainbow);
+      padding: 18px 24px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+    }
+    .ai-chat-header .close {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .ai-chat-messages {
+      padding: 20px;
+      max-height: 320px;
+      overflow-y: auto;
+      flex: 1;
+      background: #f8f9fa;
+    }
+    .ai-chat-messages .msg {
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 12px;
+      max-width: 90%;
+      font-size: 14px;
+      line-height: 1.6;
+      word-wrap: break-word;
+    }
+    .ai-chat-messages .msg.ai {
+      background: var(--gradient-rainbow);
+      color: white;
+      border-bottom-left-radius: 4px;
+      margin-right: auto;
+    }
+    .ai-chat-messages .msg.user {
+      background: var(--primary);
+      color: white;
+      border-bottom-right-radius: 4px;
+      margin-left: auto;
+    }
+    .ai-chat-messages .msg .quick-actions {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .ai-chat-messages .msg .quick-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .ai-chat-messages .msg .quick-actions a.call {
+      background: #25D366;
+      color: white;
+    }
+    .ai-chat-messages .msg .quick-actions a.email {
+      background: #ea4335;
+      color: white;
+    }
+    .ai-chat-messages .msg .quick-actions a:hover {
+      transform: scale(1.05);
+    }
+    .ai-chat-input {
+      display: flex;
+      padding: 12px 16px;
+      gap: 10px;
+      background: white;
+      border-top: 1px solid #e2e8f0;
+    }
+    .ai-chat-input input {
+      flex: 1;
+      padding: 10px 14px;
+      border: 2px solid #e2e8f0;
+      border-radius: 30px;
+      outline: none;
+      font-size: 14px;
+    }
+    .ai-chat-input input:focus {
+      border-color: var(--accent-pink);
+    }
+    .ai-chat-input button {
+      padding: 10px 20px;
+      background: var(--gradient-rainbow);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .ai-chat-input button:hover {
+      transform: scale(1.05);
+    }
+
+    /* ----- SCROLLBAR ----- */
+    ::-webkit-scrollbar { width: 12px; }
+    ::-webkit-scrollbar-track { background: #e2e8f0; }
+    ::-webkit-scrollbar-thumb {
+      background: var(--gradient-rainbow);
+      border-radius: 6px;
+    }
+
+    /* ----- NAVBAR ----- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      margin: 15px 30px 0;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 15px;
+      z-index: 1000;
+      border: 1px solid rgba(255,255,255,0.5);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo-wrapper img {
+      height: 55px;
+      border-radius: 50%;
+      border: 3px solid #ff6b35;
+    }
+    .logo-text {
+      font-size: 32px;
+      font-weight: 800;
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--gradient-rainbow);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .logo-wrapper small {
+      display: block;
+      font-size: 12px;
+      color: #718096;
+      -webkit-text-fill-color: #718096;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ====== GOOGLE-STYLE SEARCH BAR ====== */
+    .search-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      padding: 4px 4px 4px 16px;
+      border-radius: 30px;
+      border: 2px solid #e2e8f0;
+      transition: all 0.3s ease;
+      flex: 1;
+      max-width: 400px;
+      min-width: 200px;
+      position: relative;
+    }
+
+    .search-wrapper:focus-within {
+      border-color: var(--accent-orange);
+      box-shadow: 0 0 0 4px rgba(255,107,53,0.1);
+    }
+
+    .search-logo {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent-orange);
+      flex-shrink: 0;
+    }
+
+    .search-bar {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 10px 0;
+      font-size: 15px;
+      background: transparent;
+      color: var(--primary);
+      min-width: 120px;
+    }
+
+    .search-bar::placeholder {
+      color: #94a3b8;
+    }
+
+    .search-btn {
+      background: var(--gradient-rainbow);
+      border: none;
+      color: white;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .search-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(255,107,53,0.4);
+    }
+
+    /* ----- SEARCH RESULTS DROPDOWN (Google Style) ----- */
+    .search-results-dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      background: white;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+      border: 1px solid #e2e8f0;
+      max-height: 400px;
+      overflow-y: auto;
+      display: none;
+      z-index: 1001;
+      padding: 8px 0;
+    }
+
+    .search-results-dropdown.active {
+      display: block;
+      animation: slideDown 0.2s ease;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .search-result-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .search-result-item:last-child {
+      border-bottom: none;
+    }
+
+    .search-result-item:hover {
+      background: #f8fafc;
+    }
+
+    .search-result-item .result-icon {
+      font-size: 20px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f1f5f9;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .search-result-item .result-info {
+      flex: 1;
+    }
+
+    .search-result-item .result-title {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--primary);
+    }
+
+    .search-result-item .result-desc {
+      font-size: 13px;
+      color: #64748b;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ----- NO RESULTS FOUND ----- */
+    .no-results-found {
+      padding: 30px 20px;
+      text-align: center;
+      color: #64748b;
+    }
+
+    .no-results-found .no-result-icon {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 12px;
+      opacity: 0.5;
+    }
+
+    .no-results-found h4 {
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+
+    .no-results-found p {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    /* ----- SEARCH NOTIFICATION TOAST ----- */
+    .search-notification {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      z-index: 9999;
+      font-weight: 600;
+      display: none;
+      align-items: center;
+      gap: 12px;
+      animation: slideUpNoti 0.4s ease;
+    }
+
+    .search-notification.show {
+      display: flex;
+    }
+
+    @keyframes slideUpNoti {
+      from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+      to { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-weight: 700;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 16px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+    .nav-links a:hover {
+      background: var(--gradient-rainbow);
+      color: white;
+    }
+    .nav-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid #d7d4ce;
+      background: white;
+      border-radius: 8px;
+      cursor: pointer;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    /* ----- HERO SECTION ----- */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 60px;
+      gap: 40px;
+      background: var(--gradient-hero);
+      border-radius: var(--radius);
+      margin: 30px 30px 0;
+      box-shadow: 0 30px 60px rgba(10,25,47,0.25);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255,107,53,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(40px);
+    }
+    .hero-text { flex: 1 1 600px; z-index: 5; }
+    .hero-text h1 {
+      font-size: 64px;
+      font-weight: 800;
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.15;
+    }
+    .hero-text h1 span.color-strike {
+      background: linear-gradient(90deg, #ff6b35, #ff007f, #00b4d8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-text p {
+      font-size: 21px;
+      margin: 25px 0 40px;
+      color: #cbd5e1;
+      max-width: 650px;
+    }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 20px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 18px 42px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 17px;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: none;
+      cursor: pointer;
+    }
+    .btn-rainbow {
+      background: var(--gradient-rainbow);
+      color: white;
+      box-shadow: 0 10px 25px rgba(255,107,53,0.4);
+    }
+    .btn-rainbow:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(255,107,53,0.6);
+    }
+    .btn-outline-white {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+    .btn-outline-white:hover {
+      background: white;
+      color: var(--primary);
+    }
+    .hero-image {
+      flex: 1 1 380px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(15px);
+      padding: 45px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.2);
+      text-align: center;
+      z-index: 5;
+    }
+    .hero-image .brand-logo {
+      max-width: 150px;
+      border-radius: 50%;
+      border: 5px solid #00b4d8;
+      box-shadow: 0 0 30px rgba(0,180,216,0.5);
+    }
+    .hero-image h3 {
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .hero-image p {
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 34px;
+    }
+    .hero-stats span {
+      min-width: 165px;
+      padding: 14px 16px;
+      border: 1px solid rgba(255,255,255,0.26);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+    }
+    .hero-stats strong {
+      display: block;
+      font-size: 25px;
+    }
+
+    /* ----- TRUST METRICS COUNTERS ----- */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin: 60px 30px;
+    }
+    .metric-card {
+      background: white;
+      padding: 35px 25px;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+      text-align: center;
+      border-bottom: 5px solid var(--accent-orange);
+      transition: transform 0.3s;
+    }
+    .metric-card:nth-child(2) { border-bottom-color: var(--accent-pink); }
+    .metric-card:nth-child(3) { border-bottom-color: var(--accent-teal); }
+    .metric-card:nth-child(4) { border-bottom-color: var(--accent-purple); }
+    .metric-card:hover { transform: translateY(-8px); }
+    .metric-card .icon { font-size: 36px; display: block; margin-bottom: 8px; }
+    .metric-card h3 { font-size: 42px; font-weight: 800; margin-bottom: 5px; color: var(--primary); }
+    .metric-card p { font-weight: 700; color: #718096; text-transform: uppercase; font-size: 14px; }
+
+    /* ----- SECTION TITLES ----- */
+    .section-title {
+      text-align: center;
+      margin: 110px 0 60px;
+      padding: 0 30px;
+    }
+    .section-title h2 {
+      font-size: 48px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .section-title h2 span {
+      background: var(--gradient-rainbow);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .section-title p {
+      font-size: 20px;
+      color: #4a5568;
+      max-width: 800px;
+      margin: 15px auto 0;
+    }
+
+    /* ====== SERVICE CARDS ====== */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 35px;
+      padding: 0 30px;
+    }
+    .service-card {
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+    .service-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: var(--shadow-hover);
+    }
+    .img-box { height: 230px; width: 100%; overflow: hidden; position: relative; }
+    .img-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .service-card:hover .img-box img { transform: scale(1.15); }
+    
+    .service-card:nth-child(6n+1) { border-top: 6px solid var(--accent-orange); }
+    .service-card:nth-child(6n+2) { border-top: 6px solid var(--accent-pink); }
+    .service-card:nth-child(6n+3) { border-top: 6px solid var(--accent-teal); }
+    .service-card:nth-child(6n+4) { border-top: 6px solid var(--accent-green); }
+    .service-card:nth-child(6n+5) { border-top: 6px solid var(--accent-purple); }
+    .service-card:nth-child(6n+6) { border-top: 6px solid #ff0055; }
+
+    .card-body { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; }
+    .card-body h3 { font-size: 25px; font-weight: 700; color: var(--primary); margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+    .card-body ul { list-style: none; margin-bottom: 30px; }
+    .card-body ul li { padding: 10px 0; border-bottom: 1px solid #edf2f7; font-size: 16px; color: #4a5568; display: flex; align-items: center; gap: 12px; }
+    .card-body ul li i { color: var(--accent-green); }
+    .card-body .btn-order {
+      margin-top: auto;
+      background: var(--primary);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+      transition: all 0.25s;
+    }
+    .service-card:hover .btn-order { background: var(--gradient-rainbow); }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0 30px;
+      margin-bottom: 30px;
+    }
+    .filter {
+      padding: 10px 24px;
+      border-radius: 30px;
+      border: 2px solid #e2e8f0;
+      background: white;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .filter.active, .filter:hover {
+      background: var(--gradient-rainbow);
+      color: white;
+      border-color: transparent;
+    }
+
+    /* ====== CORPORATE GIFTS SECTION ====== */
+    .gifts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 0 30px;
+    }
+    .gift-card {
+      background: white;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      text-align: center;
+      border: 2px solid transparent;
+    }
+    .gift-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent-pink);
+      box-shadow: var(--shadow-hover);
+    }
+    .gift-card .gift-img {
+      height: 200px;
+      overflow: hidden;
+    }
+    .gift-card .gift-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .gift-card:hover .gift-img img {
+      transform: scale(1.1);
+    }
+    .gift-card .gift-body {
+      padding: 20px;
+    }
+    .gift-card .gift-body h4 {
+      font-size: 18px;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .gift-card .gift-body .badge {
+      display: inline-block;
+      padding: 4px 14px;
+      background: var(--gradient-rainbow);
+      color: white;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 6px;
+    }
+
+    /* ====== WHY CHOOSE US ====== */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      padding: 0 30px;
+    }
+    .why-card {
+      background: white;
+      padding: 40px 25px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+      border-bottom: 4px solid var(--accent-teal);
+    }
+    .why-card:nth-child(2) { border-bottom-color: var(--accent-pink); }
+    .why-card:nth-child(3) { border-bottom-color: var(--accent-orange); }
+    .why-card:nth-child(4) { border-bottom-color: var(--accent-purple); }
+    .why-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
+    .why-card .icon { font-size: 48px; display: block; margin-bottom: 16px; }
+
+    /* ====== INDUSTRY CONNECTIONS ====== */
+    .industry-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 0 30px;
+    }
+    .industry-item {
+      background: white;
+      padding: 25px 15px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+    .industry-item:hover {
+      border-color: var(--accent-teal);
+      transform: scale(1.05);
+    }
+    .industry-item .icon { font-size: 32px; display: block; margin-bottom: 8px; }
+    .industry-item span { font-weight: 700; font-size: 14px; }
+
+    /* ====== PORTFOLIO GALLERY ====== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 0 30px;
+    }
+    .gallery-item {
+      background: white;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s;
+    }
+    .gallery-item:hover { transform: translateY(-6px); }
+    .gallery-item img { width: 100%; height: 250px; object-fit: cover; }
+    .gallery-meta { padding: 20px 25px; font-weight: 700; }
+
+    /* ====== PROCESS ====== */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1px;
+      padding: 0 30px;
+      background: var(--primary);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+    .process-grid div {
+      padding: 40px 30px;
+      background: var(--primary);
+      color: white;
+      text-align: center;
+    }
+    .process-grid strong {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      background: var(--gradient-rainbow);
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .process-grid h3 { font-size: 22px; margin-bottom: 10px; }
+    .process-grid p { color: #cbd5e1; }
+
+    /* ====== PRICING ====== */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 0 30px;
+    }
+    .price-card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .price-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
+    .price-card.featured {
+      background: var(--gradient-rainbow);
+      color: white;
+      transform: scale(1.05);
+    }
+    .price-card.featured:hover { transform: scale(1.08); }
+    .price-card .price { font-size: 48px; font-weight: 800; margin: 20px 0; }
+    .price-card ul { list-style: none; padding: 0; margin: 20px 0; }
+    .price-card ul li { padding: 8px 0; border-bottom: 1px solid #edf2f7; }
+    .price-card.featured ul li { border-bottom-color: rgba(255,255,255,0.2); }
+
+    /* ====== ORDER SECTION ====== */
+    .order-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      padding: 80px 30px;
+      background: linear-gradient(135deg, #0a192f, #172a45);
+      border-radius: var(--radius);
+      margin: 0 30px;
+      color: white;
+    }
+    .order-copy .eyebrow { color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+    .order-copy h2 { font-size: 40px; font-family: 'Space Grotesk', sans-serif; margin: 15px 0; }
+    .accepted { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .accepted span {
+      padding: 8px 16px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .order-form {
+      background: white;
+      padding: 35px;
+      border-radius: var(--radius-sm);
+      color: var(--primary);
+    }
+    .order-form label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .order-form input, .order-form select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid #e2e8f0;
+      border-radius: var(--radius-sm);
+      font-size: 16px;
+      margin-bottom: 18px;
+      transition: border-color 0.3s;
+    }
+    .order-form input:focus, .order-form select:focus {
+      border-color: var(--accent-orange);
+      outline: none;
+    }
+    .order-form .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* ====== LOCATION ====== */
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 0 30px;
+    }
+    .location-grid iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: var(--radius-sm);
+      border: 0;
+    }
+    .address-card {
+      background: white;
+      padding: 35px;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+    }
+    .address-card h3 { font-size: 28px; color: var(--primary); }
+    .address-card p { margin: 12px 0; }
+    .address-card a { color: var(--accent-teal); text-decoration: none; }
+
+    /* ====== FAQ ====== */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 0 30px;
+    }
+    details {
+      background: white;
+      padding: 20px 25px;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+      cursor: pointer;
+    }
+    summary { font-weight: 800; font-size: 18px; cursor: pointer; }
+    details p { margin-top: 15px; padding-top: 15px; border-top: 1px solid #edf2f7; }
+
+    /* ====== REVIEWS SLIDER ====== */
+    .reviews-section {
+      padding: 80px 30px;
+      background: linear-gradient(135deg, #f8f9fa, #e2e8f0);
+      border-radius: var(--radius);
+      margin: 40px 30px;
+    }
+    .reviews-slider-wrapper {
+      overflow: hidden;
+      margin-top: 30px;
+    }
+    .reviews-track {
+      display: flex;
+      transition: transform 0.6s ease;
+      gap: 24px;
+    }
+    .review-card {
+      flex: 0 0 calc(33.333% - 16px);
+      background: white;
+      padding: 30px;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+      min-width: 280px;
+    }
+    .review-card .stars { color: #f4b942; font-size: 18px; margin-bottom: 10px; }
+    .review-card .review-text { font-size: 15px; line-height: 1.7; margin-bottom: 14px; }
+    .review-card .reviewer-name { font-weight: 800; }
+    .review-card .reviewer-detail { font-size: 13px; color: #718096; }
+    .review-card .review-date { font-size: 12px; color: #a0aec0; }
+    .slider-controls {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .slider-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid #e2e8f0;
+      background: white;
+      cursor: pointer;
+      font-size: 20px;
+      transition: all 0.3s;
+    }
+    .slider-btn:hover {
+      background: var(--gradient-rainbow);
+      color: white;
+      border-color: transparent;
+    }
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .slider-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #cbd5e1;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .slider-dot.active {
+      background: var(--accent-pink);
+      width: 30px;
+      border-radius: 5px;
+    }
+
+    /* ====== PAD PRINTING SECTION ====== */
+    .pad-printing-section {
+      padding: 80px 30px;
+      background: linear-gradient(135deg, #0a192f, #172a45);
+      border-radius: var(--radius);
+      margin: 40px 30px;
+      color: white;
+    }
+    .pad-printing-section .section-title h2 {
+      color: white;
+    }
+    .pad-printing-section .section-title p {
+      color: #cbd5e1;
+    }
+    .pad-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 0;
+    }
+    .pad-card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.3s;
+      text-align: center;
+    }
+    .pad-card:hover {
+      transform: translateY(-6px);
+      background: rgba(255,255,255,0.2);
+    }
+    .pad-card .icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .pad-card h4 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .pad-card p {
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+
+    /* ====== FOOTER ====== */
+    .site-footer {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding: 60px 30px;
+      background: #0a192f;
+      color: white;
+      margin: 40px 0 0;
+    }
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      text-decoration: none;
+      color: white;
+    }
+    .footer-brand img { width: 60px; border-radius: 50%; }
+    .footer-brand strong { font-size: 28px; font-family: 'Space Grotesk', sans-serif; }
+    .footer-brand small { display: block; font-size: 12px; color: #94a3b8; font-weight: 400; }
+    .site-footer h2 { font-size: 20px; margin-bottom: 16px; }
+    .site-footer a { display: block; color: #94a3b8; text-decoration: none; margin: 8px 0; transition: color 0.3s; }
+    .site-footer a:hover { color: white; }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 1080px) {
+      .hero { padding: 50px 30px; }
+      .hero-text h1 { font-size: 42px; }
+      .order-section { grid-template-columns: 1fr; }
+      .location-grid { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .review-card { flex: 0 0 calc(50% - 12px); }
+      .navbar { margin: 10px 15px; padding: 15px 20px; flex-wrap: wrap; }
+      
+      .search-wrapper {
+        order: 3;
+        max-width: 100%;
+        margin: 12px 0 0;
+        width: 100%;
+        flex-basis: 100%;
+      }
+      
+      .logo-wrapper {
+        flex: 1;
+      }
+      
+      .nav-toggle {
+        display: flex;
+        order: 2;
+      }
+      
+      .nav-links { 
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 15px;
+        order: 4;
+      }
+      .nav-links.open { 
+        display: flex; 
+      }
+      .site-footer { grid-template-columns: 1fr 1fr; }
+      .social-float { left: 12px; bottom: 100px; }
+      .social-float a { width: 46px; height: 46px; font-size: 20px; }
+      .ai-chat-toggle { right: 12px; width: 50px; height: 50px; font-size: 22px; }
+      .ai-chat-modal { right: 12px; width: 340px; }
+      .search-results-dropdown {
+        max-height: 300px;
+      }
+    }
+    @media (max-width: 760px) {
+      .hero { flex-direction: column; text-align: center; padding: 40px 20px; }
+      .hero-text h1 { font-size: 32px; }
+      .hero-text p { font-size: 17px; }
+      .btn-group { justify-content: center; }
+      .hero-stats { justify-content: center; }
+      .hero-stats span { min-width: 140px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .industry-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .price-card.featured { transform: none; }
+      .review-card { flex: 0 0 100%; }
+      .section-title h2 { font-size: 32px; }
+      .metrics-grid { grid-template-columns: 1fr 1fr; margin: 30px 15px; }
+      .site-footer { grid-template-columns: 1fr; text-align: center; }
+      .footer-brand { justify-content: center; }
+      .order-section { padding: 40px 20px; margin: 0 15px; }
+      .order-copy h2 { font-size: 28px; }
+      .process-grid { grid-template-columns: 1fr; }
+      .reviews-section { padding: 40px 15px; margin: 20px 15px; }
+      .gifts-grid { grid-template-columns: repeat(2, 1fr); }
+      .pad-printing-section { padding: 40px 15px; margin: 20px 15px; }
+      .social-float { left: 10px; bottom: 80px; gap: 8px; }
+      .social-float a { width: 42px; height: 42px; font-size: 18px; }
+      .social-float .tooltip { display: none; }
+      .ai-chat-toggle { right: 10px; bottom: 80px; width: 44px; height: 44px; font-size: 18px; }
+      .ai-chat-toggle .tooltip { display: none; }
+      .ai-chat-modal { right: 10px; bottom: 140px; width: 300px; max-height: 400px; }
+      .search-wrapper {
+        padding: 2px 2px 2px 12px;
+      }
+      .search-logo {
+        width: 22px;
+        height: 22px;
+      }
+      .search-bar {
+        font-size: 13px;
+        padding: 8px 0;
+      }
+      .search-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 13px;
+      }
+      .search-results-dropdown {
+        max-height: 250px;
+      }
+      .search-result-item {
+        padding: 10px 14px;
+      }
+      .search-result-item .result-title {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ====== FLOATING SOCIAL BUTTONS ====== -->
+<div class="social-float">
+  <a href="https://wa.me/918562801299" target="_blank" class="whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip">WhatsApp</span>
+  </a>
+  <a href="https://www.instagram.com/printworldsjaipur" target="_blank" class="instagram" aria-label="Follow on Instagram">
+    <i class="fab fa-instagram"></i>
+    <span class="tooltip">Instagram</span>
+  </a>
+</div>
+
+<!-- ====== AI CHAT TOGGLE ====== -->
+<button class="ai-chat-toggle" id="aiChatToggle" aria-label="AI Print Assistant">
+  <i class="fas fa-robot"></i>
+  <span class="tooltip">AI Print Assistant</span>
+</button>
+
+<!-- ====== AI CHAT MODAL ====== -->
+<div class="ai-chat-modal" id="aiChatModal">
+  <div class="ai-chat-header">
+    <span><i class="fas fa-robot"></i> Print Assistant AI</span>
+    <button class="close" id="aiChatClose">&times;</button>
+  </div>
+  <div class="ai-chat-messages" id="aiChatMessages">
+    <div class="msg ai">👋 Hello! I'm your Print Assistant. Ask me anything about printing, materials, pricing, or order status!<br><br>💡 Try asking: "What is banner printing?" or "Tell me about DTF stickers"</div>
+  </div>
+  <div class="ai-chat-input">
+    <input type="text" id="aiChatInput" placeholder="Ask about printing..." />
+    <button id="aiChatSend"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- ====== NAVBAR WITH SEARCH BAR AND LOGO ====== -->
+<nav class="navbar">
+  <div class="logo-wrapper">
+    <img src="logo.jpeg" alt="Print World Logo" />
+    <div>
+      <span class="logo-text">Print World</span>
+      <small>Jaipur Print Studio</small>
+    </div>
+  </div>
+  
+  <!-- ====== SEARCH BAR WITH LOGO ====== -->
+  <div class="search-wrapper">
+    <img src="logo.jpeg" alt="Print World Logo" class="search-logo" />
+    <input type="text" class="search-bar" placeholder="Search services..." id="searchInput" />
+    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+  </div>
+  
+  <div class="nav-links" id="navLinks">
+    <a href="#services">Services</a>
+    <a href="#gifts">Gifts</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#order">Order</a>
+    <a href="#location">Location</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Premium printing since 2012</p>
+      <h1>Banners, Brochures, <br /><span class="color-strike">Cards &amp; More</span></h1>
+      <p>High-quality print production for events, businesses, and creative projects — with design support, fast turnaround, and bulk pricing.</p>
+      <div class="btn-group">
+        <a class="btn btn-rainbow" href="#order">Get a Quote <i class="fas fa-arrow-right"></i></a>
+        <a class="btn btn-outline-white" href="#services">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <span><strong>12+</strong> Service categories</span>
+        <span><strong>2,400+</strong> Orders fulfilled</span>
+        <span><strong>4.9★</strong> Customer rating</span>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="logo.jpeg" alt="Print World" class="brand-logo" />
+      <h3>Print World</h3>
+      <p>Jaipur's Trusted Print Studio</p>
+    </div>
+  </section>
+
+  <!-- ====== TRUST METRICS ====== -->
+  <section class="metrics-grid">
+    <div class="metric-card">
+      <span class="icon">😊</span>
+      <h3 class="counter-number" data-target="1250">0+</h3>
+      <p>Happy Customers</p>
+    </div>
+    <div class="metric-card">
+      <span class="icon">🖨️</span>
+      <h3 class="counter-number" data-target="24">0+</h3>
+      <p>Services Offered</p>
+    </div>
+    <div class="metric-card">
+      <span class="icon">✅</span>
+      <h3 class="counter-number" data-target="3800">0+</h3>
+      <p>Successful Projects</p>
+    </div>
+    <div class="metric-card">
+      <span class="icon">⭐</span>
+      <h3 class="counter-number" data-target="99">0%</h3>
+      <p>Quality Rate</p>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES ====== -->
+  <section id="services">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Complete catalogue</p>
+      <h2>Printing <span>Services</span> with Details</h2>
+      <p>Select a category to filter. Every service includes material options, finishing choices, file support, and bulk order handling.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="business">Business</button>
+      <button class="filter" data-filter="marketing">Marketing</button>
+      <button class="filter" data-filter="large">Large Format</button>
+      <button class="filter" data-filter="creative">Creative</button>
+    </div>
+
+    <div class="service-grid" id="serviceGrid">
+      <div class="service-card" data-category="large">
+        <div class="img-box"><img src="https://weprints.in/wp-content/uploads/2023/04/bannerprint.jpg" alt="Banners" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-flag"></i> Banners</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Flex &amp; Vinyl Banners</li>
+            <li><i class="fas fa-check-circle"></i> Roll-up &amp; Event Displays</li>
+            <li><i class="fas fa-check-circle"></i> Outdoor &amp; Shop Boards</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="marketing">
+        <div class="img-box"><img src="https://www.printonweb.in/images/broucher1.webp" alt="Brochures" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-book-open"></i> Brochure Printing</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Tri-fold &amp; Bi-fold</li>
+            <li><i class="fas fa-check-circle"></i> Matte &amp; Gloss Finish</li>
+            <li><i class="fas fa-check-circle"></i> Product &amp; Company Profiles</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="business">
+        <div class="img-box"><img src="https://smartpressblog.imgix.net/wp-content/uploads/2020/05/BChero_edit.jpg?auto=format%2Ccompress&ixlib=php-3.3.0&s=9c5af63cb69be7d02ea1651e11e93ae6" alt="Business Cards" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-id-card"></i> Business Cards</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Premium &amp; Textured Cards</li>
+            <li><i class="fas fa-check-circle"></i> Foil &amp; Spot UV Options</li>
+            <li><i class="fas fa-check-circle"></i> Rounded Corners</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="business">
+        <div class="img-box"><img src="https://www.redpixels.in/wp-content/uploads/2024/05/Redpixel_Desk_calendar_8x8_03.jpg" alt="Calendars" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-calendar-alt"></i> Calendars</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Wall &amp; Desk Calendars</li>
+            <li><i class="fas fa-check-circle"></i> Corporate &amp; Photo Calendars</li>
+            <li><i class="fas fa-check-circle"></i> Branded Annual Planners</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="marketing">
+        <div class="img-box"><img src="https://webouns.com/wp-content/uploads/2025/05/d5534b208e83e8e4327830e2c50443ed.jpg" alt="Catalogues" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-list-ul"></i> Catalogues</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Product &amp; Service Booklets</li>
+            <li><i class="fas fa-check-circle"></i> Stitched &amp; Perfect Binding</li>
+            <li><i class="fas fa-check-circle"></i> Glossy Pages</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="business">
+        <div class="img-box"><img src="https://maake.com/cdn/shop/articles/a-colour-guide-for-your-digital-colour-printing-how-to-make-a-colour-digital-print-8780255.jpg?v=1763550415" alt="Colour Printing" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-palette"></i> Colour Printing</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Sharp CMYK Prints</li>
+            <li><i class="fas fa-check-circle"></i> Reports &amp; Presentations</li>
+            <li><i class="fas fa-check-circle"></i> Premium Paper Options</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="creative">
+        <div class="img-box"><img src="https://5.imimg.com/data5/SELLER/Default/2025/2/488949095/MU/VI/ZC/81533427/custom-printing-service.png" alt="Custom Printing" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-gift"></i> Custom Printing</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Labels, Tags &amp; Stickers</li>
+            <li><i class="fas fa-check-circle"></i> Packaging Inserts</li>
+            <li><i class="fas fa-check-circle"></i> Special Size Jobs</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="business">
+        <div class="img-box"><img src="https://www.design2print.in/wp-content/uploads/2019/05/machine-585262_1920.jpg" alt="Digital Printing" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-print"></i> Digital Printing</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Fast Short-Run Printing</li>
+            <li><i class="fas fa-check-circle"></i> Variable Data</li>
+            <li><i class="fas fa-check-circle"></i> Low Minimum Quantities</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="creative">
+        <div class="img-box"><img src="https://image.rolanddga.com/-/media/roland/images/products/inks/texartsbl3/sbl3headermobile.jpg?rev=a5833e6f16264b7eb0fb07c99934ab5e" alt="Sublimation" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-tshirt"></i> Dye Sublimation</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> T-shirts &amp; Mugs</li>
+            <li><i class="fas fa-check-circle"></i> Cushions &amp; Keychains</li>
+            <li><i class="fas fa-check-circle"></i> Sportswear &amp; Uniforms</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="marketing">
+        <div class="img-box"><img src="https://mlyx2uz0zaat.i.optimole.com/cb:tThl.5002c/w:1176/h:540/q:90/f:best/https://www.moo.com/blog/wp-content/uploads/sites/2/2025/06/0935WF-Blog-Hero-1176x540-Flyers-Vs-Brochures.jpg" alt="Flyers" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-leaf"></i> Flyers &amp; Brochures</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> A5 &amp; A4 Flyers</li>
+            <li><i class="fas fa-check-circle"></i> Pamphlets &amp; Leaflets</li>
+            <li><i class="fas fa-check-circle"></i> Door-to-Door Campaigns</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="creative">
+        <div class="img-box"><img src="https://wearebluegrass.com/wp-content/uploads/2024/05/importance-of-graphic-design-services-in-digital-marketing-1.jpg" alt="Design" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-pen-fancy"></i> Graphic Design</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Logo Cleanup &amp; Layouts</li>
+            <li><i class="fas fa-check-circle"></i> Flyer &amp; Brochure Design</li>
+            <li><i class="fas fa-check-circle"></i> Print-Ready Artwork</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+      <div class="service-card" data-category="large">
+        <div class="img-box"><img src="https://everanta.in/cdn/shop/files/Create_Your_Own_Custom_Poster_in_India.webp?v=1759232705" alt="Posters" /></div>
+        <div class="card-body">
+          <h3><i class="fas fa-image"></i> Posters</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Event &amp; Movie Posters</li>
+            <li><i class="fas fa-check-circle"></i> Educational Posters</li>
+            <li><i class="fas fa-check-circle"></i> Matte &amp; Glossy Finish</li>
+          </ul>
+          <a href="#order" class="btn-order">Get Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CORPORATE GIFTS ====== -->
+  <section id="gifts" style="margin-top: 80px;">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Premium Collection</p>
+      <h2>Corporate <span>Gifts</span></h2>
+      <p>Explore our premium corporate gift collection - perfect for branding, promotions, and client appreciation.</p>
+    </div>
+    <div class="gifts-grid">
+      <div class="gift-card">
+        <div class="gift-img"><img src="https://www.waterbottle.tech/wp-content/uploads/2021/11/sublimation-printed-swell-chillys-bottle.jpg" alt="Sublimation Bottle" /></div>
+        <div class="gift-body">
+          <h4>Sublimation Bottle</h4>
+          <span class="badge">Custom Print</span>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-img"><img src="https://transcan.co.in/cdn/shop/files/03_22.jpg?v=1753213028&width=1445" alt="UV DTF Stickers" /></div>
+        <div class="gift-body">
+          <h4>UV DTF Stickers</h4>
+          <span class="badge">Premium Quality</span>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-img"><img src="https://wayona.in/wp-content/uploads/2021/09/Black-Smal.jpg" alt="Mobile Stand" /></div>
+        <div class="gift-body">
+          <h4>Mobile Stand</h4>
+          <span class="badge">Custom Logo</span>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-img"><img src="https://image.cdn.shpy.in/402928/SKU-0142_0-1732170609244.jpg?width=600&format=webp" alt="Name Pen" /></div>
+        <div class="gift-body">
+          <h4>Name Pen</h4>
+          <span class="badge">Engraved</span>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-img"><img src="https://5.imimg.com/data5/SELLER/Default/2023/10/351169158/HV/EC/CZ/29300976/customized-keychain.jpeg" alt="Keychain" /></div>
+        <div class="gift-body">
+          <h4>Keychain</h4>
+          <span class="badge">Branded</span>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-img"><img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=900&q=80" alt="Corporate Diary" /></div>
+        <div class="gift-body">
+          <h4>Corporate Diary</h4>
+          <span class="badge">Premium</span>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-img"><img src="https://magicofgifts.com/wp-content/uploads/2024/05/IMG-20240518-WA0000_1_-removebg-preview.png" alt="Combo Diary Set" /></div>
+        <div class="gift-body">
+          <h4>Combo Diary Set</h4>
+          <span class="badge">Gift Set</span>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-img"><img src="https://images.jdmagicbox.com/quickquotes/images_main/stylish-qr-code-stand-for-jewellery-803395118-cn6tkk9c.jpg" alt="QR Code Stand" /></div>
+        <div class="gift-body">
+          <h4>QR Code Stand</h4>
+          <span class="badge">Interactive</span>
+        </div>
+      </div>
+      <div class="gift-card">
+        <div class="gift-img"><img src="https://m.media-amazon.com/images/I/61QhSqJGTnL._AC_UF1000,1000_QL80_.jpg" alt="Plastic Pen" /></div>
+        <div class="gift-body">
+          <h4>Plastic Pen</h4>
+          <span class="badge">Custom Print</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WHY CHOOSE US ====== -->
+  <section id="why-us" style="margin-top: 80px;">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Why Print World</p>
+      <h2>Why <span>Choose Us</span> for Your Printing Needs</h2>
+      <p>We combine quality craftsmanship with modern technology to deliver exceptional print results every time.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="icon">🎯</span>
+        <h3>Precision Quality</h3>
+        <p>State-of-the-art equipment and rigorous quality checks ensure every print is sharp, vibrant, and perfect.</p>
+      </div>
+      <div class="why-card">
+        <span class="icon">⚡</span>
+        <h3>Fast Turnaround</h3>
+        <p>Urgent orders handled with priority. Same-day printing available for select services with no compromise on quality.</p>
+      </div>
+      <div class="why-card">
+        <span class="icon">💡</span>
+        <h3>Expert Design Support</h3>
+        <p>Professional designers help refine your artwork, fix file issues, and create stunning print-ready layouts.</p>
+      </div>
+      <div class="why-card">
+        <span class="icon">💰</span>
+        <h3>Competitive Pricing</h3>
+        <p>Transparent pricing with volume discounts. Get premium quality prints at rates that fit your budget.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== INDUSTRY CONNECTIONS ====== -->
+  <section id="industry" style="margin-top: 80px;">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Our Network</p>
+      <h2>Industry <span>Connections</span> &amp; Partnerships</h2>
+      <p>We work with leading brands, agencies, and businesses across India to deliver exceptional printing solutions.</p>
+    </div>
+    <div class="industry-grid">
+      <div class="industry-item"><span class="icon">🏢</span><span>Real Estate</span></div>
+      <div class="industry-item"><span class="icon">🛍️</span><span>Retail Brands</span></div>
+      <div class="industry-item"><span class="icon">🎤</span><span>Event Agencies</span></div>
+      <div class="industry-item"><span class="icon">🏨</span><span>Hospitality</span></div>
+      <div class="industry-item"><span class="icon">📱</span><span>Tech Startups</span></div>
+      <div class="industry-item"><span class="icon">🎨</span><span>Creative Studios</span></div>
+      <div class="industry-item"><span class="icon">📚</span><span>Educational</span></div>
+      <div class="industry-item"><span class="icon">🏥</span><span>Healthcare</span></div>
+      <div class="industry-item"><span class="icon">🏛️</span><span>Government</span></div>
+      <div class="industry-item"><span class="icon">✈️</span><span>Travel &amp; Tourism</span></div>
+      <div class="industry-item"><span class="icon">🏋️</span><span>Fitness &amp; Sports</span></div>
+      <div class="industry-item"><span class="icon">🎬</span><span>Media &amp; Production</span></div>
+    </div>
+  </section>
+
+  <!-- ====== MATERIALS & FINISHING ====== -->
+  <section style="margin-top: 80px; padding: 0 30px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; background: white; padding: 60px; border-radius: var(--radius); box-shadow: var(--shadow);">
+      <div>
+        <p style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Materials and finishing</p>
+        <h2 style="font-size: 36px; font-family: 'Space Grotesk', sans-serif; color: var(--primary);">Paper, Fabric, Vinyl, Packaging Board, and Premium Finishes.</h2>
+        <p style="color: #4a5568; margin-top: 15px;">Offer customers standard and premium stock choices with finishing that makes the product feel professional.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div style="padding: 20px; background: #f8f9fa; border-radius: var(--radius-sm);"><h4 style="color: var(--primary);">Paper Stock</h4><p style="color: #4a5568; font-size: 14px;">80-350 GSM, textured, photo paper, art card</p></div>
+        <div style="padding: 20px; background: #f8f9fa; border-radius: var(--radius-sm);"><h4 style="color: var(--primary);">Finishes</h4><p style="color: #4a5568; font-size: 14px;">Matte, gloss, lamination, UV, foil, embossing</p></div>
+        <div style="padding: 20px; background: #f8f9fa; border-radius: var(--radius-sm);"><h4 style="color: var(--primary);">Large Format</h4><p style="color: #4a5568; font-size: 14px;">Flex, vinyl, canvas, roll-up stands, display boards</p></div>
+        <div style="padding: 20px; background: #f8f9fa; border-radius: var(--radius-sm);"><h4 style="color: var(--primary);">File Support</h4><p style="color: #4a5568; font-size: 14px;">PDF, AI, PSD, CDR, PNG, JPG, SVG</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PORTFOLIO ====== -->
+  <section id="portfolio" style="margin-top: 80px;">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Pic references</p>
+      <h2>Portfolio <span>Style Gallery</span></h2>
+      <p>These are image references for the website. You can replace them with actual shop photos later.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://www.inkfactory.pk/wp-content/uploads/2019/10/Luxury-Card-0004.jpg" alt="Business cards" /><div class="gallery-meta">Business Cards</div></div>
+      <div class="gallery-item"><img src="https://mlyx2uz0zaat.i.optimole.com/cb:tThl.5002c/w:1176/h:540/q:90/f:best/https://www.moo.com/blog/wp-content/uploads/sites/2/2025/06/0935WF-Blog-Hero-1176x540-Flyers-Vs-Brochures.jpg" alt="Brochures" /><div class="gallery-meta">Brochures &amp; Flyers</div></div>
+      <div class="gallery-item"><img src="https://cdn.shopify.com/s/files/1/0010/9622/0735/files/Custom_Apparel.png?v=1689360912" alt="Apparel" /><div class="gallery-meta">Dye Sublimation Apparel</div></div>
+      <div class="gallery-item"><img src="https://5.imimg.com/data5/SELLER/Default/2020/8/GK/SI/TL/109645474/printed-custom-packaging-box.jpg" alt="Packaging" /><div class="gallery-meta">Custom Packaging</div></div>
+      <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLeBeEp8CvX197OhvHrxJ2zRALpxFQxZdghg&s" alt="Large format" /><div class="gallery-meta">Large Format Print</div></div>
+    </div>
+  </section>
+
+  <!-- ====== PROCESS ====== -->
+  <section id="process" style="margin-top: 80px; padding: 0 30px;">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Smart production workflow</p>
+      <h2 style="color: white;">How Your Order <span>Moves</span> From Idea to Delivery</h2>
+      <p style="color: #cbd5e1;">A streamlined process designed for quality and speed.</p>
+    </div>
+    <div class="process-grid">
+      <div><strong>1</strong><h3>Consult</h3><p>Share product type, size, quantity, paper, finish, deadline, and delivery area.</p></div>
+      <div><strong>2</strong><h3>Design Check</h3><p>Artwork is checked for bleed, margins, resolution, color mode, spelling, and layout fit.</p></div>
+      <div><strong>3</strong><h3>Proof Approval</h3><p>Customer confirms final proof before bulk printing, cutting, folding, binding, or packing.</p></div>
+      <div><strong>4</strong><h3>Dispatch</h3><p>Order is packed for pickup, local delivery, courier, event-site drop, or scheduled supply.</p></div>
+    </div>
+  </section>
+
+  <!-- ====== PRICING ====== -->
+  <section id="pricing" style="margin-top: 80px;">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Sample pricing blocks</p>
+      <h2>Clear <span>Packages</span> for Quick Enquiry</h2>
+      <p>Use these as starting points. Exact price depends on size, quantity, finish, paper, artwork, and deadline.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Business Essentials</h3>
+        <div class="price">₹999+</div>
+        <ul>
+          <li>Business cards</li>
+          <li>Letterhead or envelopes</li>
+          <li>Basic design check</li>
+          <li>Standard paper stock</li>
+        </ul>
+      </div>
+      <div class="price-card featured">
+        <h3>Marketing Launch</h3>
+        <div class="price">₹2,499+</div>
+        <ul>
+          <li>Flyers or brochures</li>
+          <li>Poster or banner</li>
+          <li>Colour print setup</li>
+          <li>Bulk quantity support</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <h3>Custom Brand Kit</h3>
+        <div class="price">₹4,999+</div>
+        <ul>
+          <li>Catalogue or calendar</li>
+          <li>Packaging inserts</li>
+          <li>Graphic design support</li>
+          <li>Premium finish options</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section style="margin-top: 80px; padding: 0 30px;">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Customer confidence</p>
+      <h2>Built for <span>Local Businesses</span> and Event Teams</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+      <div style="background: white; padding: 30px; border-radius: var(--radius-sm); box-shadow: var(--shadow);"><p style="font-size: 18px;">"Fast banner delivery and clean colours. Perfect for our launch event."</p><strong>Retail Store Owner</strong></div>
+      <div style="background: white; padding: 30px; border-radius: var(--radius-sm); box-shadow: var(--shadow);"><p style="font-size: 18px;">"Brochures looked premium and the design correction saved our print file."</p><strong>Real Estate Consultant</strong></div>
+      <div style="background: white; padding: 30px; border-radius: var(--radius-sm); box-shadow: var(--shadow);"><p style="font-size: 18px;">"Calendars and business cards were packed nicely for corporate gifting."</p><strong>Office Admin Team</strong></div>
+    </div>
+  </section>
+
+  <!-- ====== ORDER SECTION ====== -->
+  <section id="order" style="margin-top: 80px;">
+    <div class="order-section">
+      <div class="order-copy">
+        <p class="eyebrow">Production contact form</p>
+        <h2>Send Your Print Enquiry</h2>
+        <p>This form is connected to your Google Apps Script URL and can sync enquiry data with Google Sheets.</p>
+        <div class="accepted">
+          <span>PDF</span><span>AI</span><span>CDR</span><span>PSD</span><span>PNG</span><span>JPG</span>
+        </div>
+      </div>
+      <form id="secureOrderForm" class="order-form">
+        <label>Customer Name</label>
+        <input id="custName" type="text" placeholder="Enter full name" required />
+        <label>Phone Number</label>
+        <input id="custPhone" type="tel" placeholder="Enter mobile number" required />
+        <label>Product / Service</label>
+        <select id="custProd" required>
+          <option value="">Select service</option>
+          <option>Banners</option>
+          <option>Brochure printing</option>
+          <option>Business card printing</option>
+          <option>Calendars</option>
+          <option>Catalogues</option>
+          <option>Colour printing</option>
+          <option>Custom printing</option>
+          <option>Digital printing</option>
+          <option>Dye sublimation printing</option>
+          <option>Flyers & brochures</option>
+          <option>Graphic design</option>
+          <option>Posters</option>
+          <option>Corporate Gifts</option>
+          <option>Pad Printing</option>
+        </select>
+        <label>Quantity</label>
+        <input id="custQty" type="number" min="1" placeholder="Example: 500" required />
+        <label>Order Date</label>
+        <input id="custDate" type="text" readonly />
+        <button id="fireOrderBtn" class="btn btn-rainbow" type="submit" style="width:100%; justify-content:center;">Transmit Framework <i class="fas fa-paper-plane"></i></button>
+        <p style="font-size: 13px; text-align: center; margin-top: 10px; color: #718096;">After submit, your team can follow up for artwork, price, proof approval, and delivery details.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== PAD PRINTING SECTION ====== -->
+  <section id="pad-printing" style="margin-top: 80px;">
+    <div class="pad-printing-section">
+      <div class="section-title">
+        <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Specialized Service</p>
+        <h2 style="color: white;">Pad <span style="background: var(--gradient-rainbow); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Printing</span></h2>
+        <p>Precision pad printing for logos, text, and designs on curved or uneven surfaces.</p>
+      </div>
+      <div class="pad-grid">
+        <div class="pad-card">
+          <span class="icon">🎯</span>
+          <h4>Precision Printing</h4>
+          <p>Perfect for curved, textured, or uneven surfaces where traditional printing can't reach.</p>
+        </div>
+        <div class="pad-card">
+          <span class="icon">🔧</span>
+          <h4>Versatile Applications</h4>
+          <p>Ideal for pens, mugs, keychains, electronic components, toys, and promotional items.</p>
+        </div>
+        <div class="pad-card">
+          <span class="icon">🎨</span>
+          <h4>Multi-Color Options</h4>
+          <p>Vibrant, durable prints with multiple color options for your branding needs.</p>
+        </div>
+        <div class="pad-card">
+          <span class="icon">⚡</span>
+          <h4>Bulk Production</h4>
+          <p>High-speed pad printing for bulk orders with consistent quality and quick turnaround.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LOCATION ====== -->
+  <section id="location" style="margin-top: 80px;">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Visit our print desk</p>
+      <h2>Address and <span>Google Map</span></h2>
+      <p>139, Mall Rd, Sector-3, Naya Khera, Vidyadhar Nagar, Jaipur, Rajasthan 302039</p>
+    </div>
+    <div class="location-grid">
+      <div class="address-card">
+        <h3>Print World Studio</h3>
+        <p>139, Mall Rd, Sector-3, Naya Khera, Vidyadhar Nagar, Jaipur, Rajasthan 302039</p>
+        <p><strong>Phone:</strong> <a href="tel:+918562801299">+91 85628 01299</a></p>
+        <p><strong>Email:</strong> <a href="mailto:printworld389@gmail.com">printworld389@gmail.com</a></p>
+        <p><strong>Hours:</strong> Monday to Saturday, 9:00 AM - 7:00 PM</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=139%2C%20Mall%20Rd%2C%20Sector-3%2C%20Naya%20Khera%2C%20Vidyadhar%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302039" target="_blank" style="display: inline-block; margin-top: 15px; padding: 12px 28px; background: var(--gradient-rainbow); color: white; border-radius: 30px; text-decoration: none; font-weight: 700;">Open in Google Maps</a>
+      </div>
+      <iframe
+        src="https://maps.google.com/maps?q=139%2C%20Mall%20Rd%2C%20Sector-3%2C%20Naya%20Khera%2C%20Vidyadhar%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302039&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Google Map for Print World Studio"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section style="margin-top: 80px;">
+    <div class="section-title">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">FAQ</p>
+      <h2>Common <span>Printing</span> Questions</h2>
+    </div>
+    <div class="faq-grid">
+      <details open>
+        <summary>Which file is best for printing?</summary>
+        <p>Print-ready PDF with CMYK colors, 300 DPI images, 3 mm bleed, and outlined fonts is best.</p>
+      </details>
+      <details>
+        <summary>Can you design my brochure or banner?</summary>
+        <p>Yes, graphic design support is included as a service for layout correction, new designs, and print-ready artwork.</p>
+      </details>
+      <details>
+        <summary>Do you handle urgent orders?</summary>
+        <p>Rush orders can be handled depending on quantity, material availability, finishing, and current production queue.</p>
+      </details>
+      <details>
+        <summary>Can I order custom size printing?</summary>
+        <p>Yes, custom printing supports special sizes, unique materials, personalized gifts, labels, packaging, and signage.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ====== GOOGLE REVIEWS SLIDER ====== -->
+  <section class="reviews-section">
+    <div class="section-title" style="margin: 0 0 30px;">
+      <p class="eyebrow" style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Google Reviews</p>
+      <h2>What Our <span>Customers</span> Say</h2>
+      <p>Real reviews from real customers who trust Print World for their printing needs.</p>
+    </div>
+    <div class="reviews-slider-wrapper">
+      <div class="reviews-track" id="reviewsTrack">
+        <div class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">Best printing shop! Their designing head Vimal Ji understood my requirement perfectly and delivered amazing quality prints. Fast service, good price, and very supportive staff. Definitely recommended.</p>
+          <div class="reviewer-name">Manish Dayma</div>
+          <span class="reviewer-detail">Local Guide · 28 reviews</span>
+          <span class="review-date">2 months ago</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">I had a really good experience with Print World. Their work is very professional and the quality is excellent. The best part is that they always deliver my orders on time. The customer service is also very supportive. If anyone is looking for reliable and high-quality printing services, I would definitely recommend Print World.</p>
+          <div class="reviewer-name">Nitesh Pandey</div>
+          <span class="reviewer-detail">6 reviews · 12 photos</span>
+          <span class="review-date">8 months ago</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">Excellent Printing Service! I truly appreciate the quality and dedication of this printing business. Their work is neat, professional, and always delivered on time. May God bless their...</p>
+          <div class="reviewer-name">Pawan Kumar</div>
+          <span class="reviewer-detail">1 review</span>
+          <span class="review-date">8 months ago</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">Superb experience! Superb work 😎 And very good communication with the owner 😃</p>
+          <div class="reviewer-name">Anjali Meena</div>
+          <span class="reviewer-detail">2 reviews</span>
+          <span class="review-date">3 months ago</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">Best place for any work related to printing in Jaipur</p>
+          <div class="reviewer-name">Rishabh Sarita Verma</div>
+          <span class="reviewer-detail">6 reviews · 1 photo</span>
+          <span class="review-date">a month ago</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">Excellent printing quality with good coordination. The team understood my requirements perfectly and delivered beyond expectations.</p>
+          <div class="reviewer-name">Lalit Kumar</div>
+          <span class="reviewer-detail">3 reviews</span>
+          <span class="review-date">2 months ago</span>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+      <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <div>
+    <a class="footer-brand" href="#home">
+      <img src="logo.jpeg" alt="Print World Logo" />
+      <div><strong>Print World</strong><small>Jaipur Print Studio</small></div>
+    </a>
+    <p style="margin-top: 15px; color: #94a3b8;">Complete printing services for banners, brochures, cards, calendars, catalogues, posters, digital print, sublimation, and design.</p>
+  </div>
+  <div>
+    <h2>Contact</h2>
+    <p style="color: #94a3b8;">139, Mall Rd, Sector-3, Naya Khera, Vidyadhar Nagar, Jaipur, Rajasthan 302039</p>
+    <p style="color: #94a3b8;"><a href="tel:+918562801299" style="color: #94a3b8; text-decoration: none;">+91 85628 01299</a></p>
+    <p style="color: #94a3b8;"><a href="mailto:printworld389@gmail.com" style="color: #94a3b8; text-decoration: none;">printworld389@gmail.com</a></p>
+  </div>
+  <div>
+    <h2>Quick Links</h2>
+    <a href="#services">Services</a>
+    <a href="#gifts">Corporate Gifts</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#order">Contact Form</a>
+    <a href="#location">Google Map</a>
+  </div>
+  <div>
+    <h2>Follow Us</h2>
+    <a href="https://www.instagram.com/printworldsjaipur" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="https://wa.me/918562801299" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </div>
+</footer>
+
+<script>
+  // ====== NAVIGATION TOGGLE ======
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+
+  // ====== SERVICE FILTER ======
+  const filters = document.querySelectorAll('.filter');
+  const serviceCards = document.querySelectorAll('.service-card');
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const category = btn.dataset.filter;
+      serviceCards.forEach(card => {
+        card.style.display = (category === 'all' || card.dataset.category === category) ? 'flex' : 'none';
+      });
+    });
+  });
+
+  // ====== COUNTER ANIMATION ======
+  function animateCounters() {
+    const counters = document.querySelectorAll('.counter-number');
+    counters.forEach(counter => {
+      const target = parseInt(counter.dataset.target);
+      const suffix = counter.textContent.replace(/[0-9+%]/g, '');
+      let current = 0;
+      const increment = target / 80;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          counter.textContent = target + suffix;
+          clearInterval(timer);
+        } else {
+          counter.textContent = Math.floor(current) + suffix;
+        }
+      }, 25);
+    });
+  }
+
+  // ====== GOOGLE-STYLE SEARCH WITH RESULTS ======
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const searchWrapper = document.querySelector('.search-wrapper');
+    
+    // Create results dropdown
+    const dropdown = document.createElement('div');
+    dropdown.className = 'search-results-dropdown';
+    dropdown.id = 'searchDropdown';
+    searchWrapper.appendChild(dropdown);
+    
+    // Create notification toast
+    const notification = document.createElement('div');
+    notification.className = 'search-notification';
+    notification.id = 'searchNotification';
+    notification.innerHTML = '<span id="notiIcon">🔍</span> <span id="notiText">No results found</span>';
+    document.body.appendChild(notification);
+
+    function performSearch() {
+      const query = searchInput.value.toLowerCase().trim();
+      const dropdown = document.getElementById('searchDropdown');
+      const notification = document.getElementById('searchNotification');
+      
+      if (!query) {
+        dropdown.classList.remove('active');
+        notification.classList.remove('show');
+        serviceCards.forEach(card => card.style.display = 'flex');
+        return;
+      }
+      
+      let results = [];
+      let matchedCards = [];
+      
+      serviceCards.forEach(card => {
+        const title = card.querySelector('h3')?.textContent?.toLowerCase() || '';
+        const desc = card.querySelector('p')?.textContent?.toLowerCase() || '';
+        const items = Array.from(card.querySelectorAll('li')).map(li => li.textContent.toLowerCase()).join(' ');
+        const category = card.dataset.category || '';
+        
+        const match = title.includes(query) || desc.includes(query) || items.includes(query) || category.includes(query);
+        
+        if (match) {
+          matchedCards.push(card);
+          results.push({
+            title: card.querySelector('h3')?.textContent?.trim() || 'Unknown',
+            desc: card.querySelector('p')?.textContent?.trim() || 'No description',
+            icon: card.querySelector('h3 i')?.className || 'fas fa-print',
+            card: card
+          });
+        }
+      });
+      
+      serviceCards.forEach(card => {
+        card.style.display = 'none';
+      });
+      
+      matchedCards.forEach(card => {
+        card.style.display = 'flex';
+      });
+      
+      if (results.length > 0) {
+        dropdown.innerHTML = results.map(item => `
+          <div class="search-result-item" data-title="${item.title}">
+            <div class="result-icon"><i class="${item.icon}"></i></div>
+            <div class="result-info">
+              <div class="result-title">${item.title}</div>
+              <div class="result-desc">${item.desc}</div>
+            </div>
+          </div>
+        `).join('');
+        
+        dropdown.classList.add('active');
+        notification.classList.remove('show');
+        
+        dropdown.querySelectorAll('.search-result-item').forEach((el, index) => {
+          el.addEventListener('click', () => {
+            const targetCard = matchedCards[index];
+            if (targetCard) {
+              targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              targetCard.style.border = '3px solid #ff6b35';
+              setTimeout(() => {
+                targetCard.style.border = '';
+              }, 3000);
+            }
+            dropdown.classList.remove('active');
+            searchInput.value = '';
+            serviceCards.forEach(card => card.style.display = 'flex');
+          });
+        });
+        
+      } else {
+        dropdown.classList.remove('active');
+        
+        notification.querySelector('#notiText').textContent = 'No services found for "' + query + '"';
+        notification.querySelector('#notiIcon').textContent = '🔍';
+        notification.classList.add('show');
+        
+        clearTimeout(window.notiTimer);
+        window.notiTimer = setTimeout(() => {
+          notification.classList.remove('show');
+        }, 3000);
+        
+        dropdown.innerHTML = `
+          <div class="no-results-found">
+            <span class="no-result-icon">🔍</span>
+            <h4>No Results Found</h4>
+            <p>We couldn't find any services matching "<strong>${query}</strong>"</p>
+            <p style="margin-top: 8px; font-size: 13px; color: #94a3b8;">Try searching for: banners, brochures, cards, calendars, posters</p>
+          </div>
+        `;
+        dropdown.classList.add('active');
+      }
+    }
+
+    let searchTimeout;
+    if (searchInput) {
+      searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(performSearch, 300);
+      });
+    }
+    
+    if (searchBtn) {
+      searchBtn.addEventListener('click', performSearch);
+    }
+    
+    if (searchInput) {
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          performSearch();
+          document.getElementById('searchDropdown')?.classList.remove('active');
+        }
+      });
+    }
+    
+    document.addEventListener('click', function(e) {
+      const dropdown = document.getElementById('searchDropdown');
+      if (dropdown && !searchWrapper.contains(e.target)) {
+        dropdown.classList.remove('active');
+      }
+    });
+    
+    document.getElementById('searchNotification')?.addEventListener('click', function() {
+      this.classList.remove('show');
+    });
+  });
+
+  // ====== REVIEWS SLIDER ======
+  (function() {
+    const track = document.getElementById('reviewsTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotsContainer = document.getElementById('sliderDots');
+    const cards = track.querySelectorAll('.review-card');
+    let currentIndex = 0;
+    let totalCards = cards.length;
+    let cardsPerView = 3;
+    let autoSlideInterval;
+
+    function getCardsPerView() {
+      if (window.innerWidth <= 760) return 1;
+      if (window.innerWidth <= 1080) return 2;
+      return 3;
+    }
+
+    function updateSlider() {
+      cardsPerView = getCardsPerView();
+      const cardWidth = cards[0].offsetWidth + 24;
+      const maxIndex = Math.max(0, totalCards - cardsPerView);
+      if (currentIndex > maxIndex) currentIndex = maxIndex;
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      updateDots();
+    }
+
+    function updateDots() {
+      const totalDots = Math.ceil(totalCards / cardsPerView);
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < totalDots; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'slider-dot' + (i === Math.floor(currentIndex / cardsPerView) ? ' active' : '');
+        dot.addEventListener('click', () => {
+          currentIndex = i * cardsPerView;
+          updateSlider();
+          resetAutoSlide();
+        });
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function nextSlide() {
+      const maxIndex = Math.max(0, totalCards - cardsPerView);
+      if (currentIndex + cardsPerView < totalCards) {
+        currentIndex += cardsPerView;
+      } else {
+        currentIndex = maxIndex;
+      }
+      updateSlider();
+    }
+
+    function prevSlide() {
+      if (currentIndex - cardsPerView >= 0) {
+        currentIndex -= cardsPerView;
+      } else {
+        currentIndex = 0;
+      }
+      updateSlider();
+    }
+
+    function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+
+    nextBtn.addEventListener('click', () => { nextSlide(); resetAutoSlide(); });
+    prevBtn.addEventListener('click', () => { prevSlide(); resetAutoSlide(); });
+    window.addEventListener('resize', updateSlider);
+    setTimeout(updateSlider, 100);
+    resetAutoSlide();
+  })();
+
+  // ====== AI CHAT - SMART PRINTING ASSISTANT ======
+  const aiToggle = document.getElementById('aiChatToggle');
+  const aiModal = document.getElementById('aiChatModal');
+  const aiClose = document.getElementById('aiChatClose');
+  const aiInput = document.getElementById('aiChatInput');
+  const aiSend = document.getElementById('aiChatSend');
+  const aiMessages = document.getElementById('aiChatMessages');
+
+  const printKnowledge = {
+    'banner': 'Banners are large format prints used for advertising, events, and promotions. We offer flex, vinyl, roll-up, and outdoor banners with custom sizes and finishes.',
+    'brochure': 'Brochures are folded marketing materials. We offer tri-fold, bi-fold, and custom folding with matte or gloss finish on premium paper.',
+    'business card': 'Business cards are essential for networking. We offer premium cards with textured, laminated, foil, spot UV, and rounded corner options.',
+    'calendar': 'Calendars include wall, desk, corporate, photo, and festival calendars with branded annual planners for gifting.',
+    'catalogue': 'Catalogues showcase products with stitched or perfect binding and glossy pages. Perfect for retail and product displays.',
+    'digital printing': 'Digital printing offers fast short-run printing with variable data, sharp images, and low minimum quantities.',
+    'sublimation': 'Dye sublimation transfers vibrant prints onto t-shirts, mugs, cushions, keychains, sportswear, and uniforms.',
+    'flyer': 'Flyers are A5/A4 promotional handouts for local marketing, door-to-door campaigns, and events.',
+    'poster': 'Posters are large format prints for events, education, and displays with matte or glossy finish.',
+    'gift': 'Corporate gifts include sublimation bottles, UV DTF stickers, mobile stands, name pens, keychains, diaries, combo sets, QR stands, and plastic pens.',
+    'pad printing': 'Pad printing is a specialized technique for printing on curved, textured, or uneven surfaces like pens, mugs, and electronics.',
+    'price': 'Pricing depends on size, quantity, paper type, finish, and deadline. Our Business Essentials start at ₹999+, Marketing Launch at ₹2,499+, and Custom Brand Kit at ₹4,999+.',
+    'time': 'We work Monday to Saturday, 9:00 AM - 7:00 PM. Rush orders can be handled based on quantity and production queue.',
+    'file': 'We accept PDF, AI, PSD, CDR, PNG, JPG, and SVG files. Print-ready PDF with CMYK, 300 DPI, 3mm bleed, and outlined fonts is best.',
+    'design': 'Yes! We offer graphic design support for logo cleanup, print-ready layouts, flyer design, brochure design, and brand kits.',
+    'urgent': 'Rush orders can be handled depending on quantity, material availability, finishing, and current production queue.',
+    'custom': 'Yes! We support custom sizes, unique materials, personalized gifts, labels, packaging, and signage.',
+    'minimum order': 'We have low minimum quantities for digital printing and bulk discounts for larger orders.',
+    'delivery': 'We offer pickup, local delivery, courier, event-site drop, and scheduled supply options.',
+    'contact': 'You can reach us at +91 85628 01299 or email printworld389@gmail.com. Our studio is at 139, Mall Rd, Sector-3, Naya Khera, Vidyadhar Nagar, Jaipur.',
+    'hello': 'Hello! 👋 Welcome to Print World. I\'m your AI assistant. I can help you with information about our printing services, pricing, materials, and more. Ask me anything!',
+    'help': 'I can help you with: 📌 Printing services (banners, brochures, cards, etc.) 📌 Pricing and packages 📌 File formats and design tips 📌 Corporate gifts and pad printing 📌 Studio location and hours 📌 Urgent orders and custom requests'
+  };
+
+  function findAnswer(query) {
+    const lower = query.toLowerCase();
+    let bestMatch = null;
+    let bestScore = 0;
+
+    for (const [key, value] of Object.entries(printKnowledge)) {
+      if (lower.includes(key)) {
+        const score = key.length;
+        if (score > bestScore) {
+          bestScore = score;
+          bestMatch = value;
+        }
+      }
+    }
+
+    if (bestMatch) return bestMatch;
+
+    const words = lower.split(' ');
+    for (const word of words) {
+      if (word.length > 3) {
+        for (const [key, value] of Object.entries(printKnowledge)) {
+          if (key.includes(word) || word.includes(key)) {
+            return value;
+          }
+        }
+      }
+    }
+
+    return null;
+  }
+
+  function getFallbackResponse(query) {
+    const lower = query.toLowerCase();
+    if (lower.includes('call') || lower.includes('phone') || lower.includes('number')) {
+      return '📞 Call us at **+91 85628 01299** for immediate assistance! Our team is available Monday to Saturday, 9:00 AM - 7:00 PM.';
+    }
+    if (lower.includes('email') || lower.includes('mail')) {
+      return '📧 Email us at **printworld389@gmail.com** and we\'ll respond within 24 hours!';
+    }
+    if (lower.includes('thank')) {
+      return '🙏 You\'re welcome! I\'m happy to help. Feel free to ask if you have more questions about our printing services.';
+    }
+    if (lower.includes('hi') || lower.includes('hey') || lower.includes('hello') || lower.includes('namaste')) {
+      return '👋 Hello! I\'m your Print Assistant. I can help you with printing services, pricing, materials, design tips, and more. What would you like to know?';
+    }
+    return '🤔 I\'m not sure about that specific query. I specialize in printing-related questions. Try asking about banners, brochures, pricing, file formats, or our corporate gifts. You can also call us at +91 85628 01299 for direct assistance!';
+  }
+
+  function sendAIMessage() {
+    const msg = aiInput.value.trim();
+    if (!msg) return;
+    
+    const userMsg = document.createElement('div');
+    userMsg.className = 'msg user';
+    userMsg.textContent = msg;
+    aiMessages.appendChild(userMsg);
+    aiInput.value = '';
+    aiMessages.scrollTop = aiMessages.scrollHeight;
+
+    let answer = findAnswer(msg);
+    let responseText = answer || getFallbackResponse(msg);
+
+    const aiMsg = document.createElement('div');
+    aiMsg.className = 'msg ai';
+    
+    let htmlContent = responseText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    
+    if (responseText.includes('call') || responseText.includes('phone') || responseText.includes('email') || 
+        msg.toLowerCase().includes('contact') || msg.toLowerCase().includes('reach')) {
+      htmlContent += `
+        <div class="quick-actions">
+          <a href="tel:+918562801299" class="call"><i class="fas fa-phone"></i> Call Now</a>
+          <a href="mailto:printworld389@gmail.com" class="email"><i class="fas fa-envelope"></i> Email Us</a>
+        </div>
+      `;
+    }
+    
+    if (!msg.toLowerCase().includes('hello') && !msg.toLowerCase().includes('hi') && !msg.toLowerCase().includes('hey')) {
+      htmlContent += `
+        <div class="quick-actions" style="margin-top:8px;">
+          <a href="tel:+918562801299" class="call" style="font-size:11px; padding:4px 12px;"><i class="fas fa-phone"></i> Call</a>
+          <a href="mailto:printworld389@gmail.com" class="email" style="font-size:11px; padding:4px 12px;"><i class="fas fa-envelope"></i> Email</a>
+          <a href="https://wa.me/918562801299" target="_blank" style="background:#25D366; color:white; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:4px;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      `;
+    }
+    
+    aiMsg.innerHTML = htmlContent;
+    aiMessages.appendChild(aiMsg);
+    aiMessages.scrollTop = aiMessages.scrollHeight;
+  }
+
+  aiToggle.addEventListener('click', () => {
+    aiModal.classList.toggle('active');
+  });
+
+  aiClose.addEventListener('click', () => {
+    aiModal.classList.remove('active');
+  });
+
+  aiSend.addEventListener('click', sendAIMessage);
+  aiInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') sendAIMessage();
+  });
+
+  // ====== ORDER FORM - GOOGLE SHEETS ======
+  (function () {
+    const macroURL = "https://script.google.com/macros/s/AKfycbxkOi_jncFvWNDdW33LmiPkg4gAj_hxCpeUBgi5T5Ag3k1RBj6qKIV7qBqsFUYsHCBDgw/exec";
+    const f = document.getElementById("secureOrderForm");
+    const b = document.getElementById("fireOrderBtn");
+    const dField = document.getElementById("custDate");
+
+    if (!f || !b || !dField) return;
+
+    function refreshStamp() {
+      const today = new Date();
+      const day = String(today.getDate()).padStart(2, "0");
+      const month = String(today.getMonth() + 1).padStart(2, "0");
+      dField.value = `${day}/${month}/${today.getFullYear()}`;
+    }
+
+    refreshStamp();
+
+    f.addEventListener("submit", function (event) {
+      event.preventDefault();
+      b.disabled = true;
+      b.textContent = "Registering Data...";
+
+      const formData = new URLSearchParams({
+        name: document.getElementById("custName").value,
+        phone: document.getElementById("custPhone").value,
+        product: document.getElementById("custProd").value,
+        quantity: document.getElementById("custQty").value,
+        date: dField.value
+      });
+
+      fetch(macroURL, { method: "POST", body: formData })
+        .then((r) => r.text())
+        .then(() => {
+          alert("Matrix Confirmation Success! Your layout engineer will connect shortly.");
+          f.reset();
+          refreshStamp();
+        })
+        .catch(() => alert("Link Failure. Verify connectivity options."))
+        .finally(() => {
+          b.disabled = false;
+          b.textContent = "Transmit Framework";
+        });
+    });
+  })();
+
+  // ====== TRIGGER COUNTER ANIMATION ======
+  document.addEventListener('DOMContentLoaded', animateCounters);
+</script>
+</body>
+</html>
